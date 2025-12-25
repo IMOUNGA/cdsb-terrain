@@ -1,0 +1,7 @@
+{
+  "name": "cdsb-terrain",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
