@@ -1,0 +1,12 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-padding page-title">
+    <h2>Bâtiments</h2>
+    <h3>Consultez l’état de santé et les informations clés des bâtiments.</h3>
+  </div>
+
+  <div>
+    @for (property of properties(); track property.id) {
+      <app-property-presentation-card [property]="property"/>
+    }
+  </div>
+</ion-content>

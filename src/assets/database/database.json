@@ -1,0 +1,388 @@
+{
+  "property": [
+    {
+      "id": 3331,
+      "name": "3331-19-11-2025-VERSAILLES-78-Entrepôts - Entrepôts",
+      "city": "Versailles",
+      "address": "Rue de la Division Leclerc, 78000 Versailles",
+      "surface": "440m2",
+      "description": "La présente procédure de mise en concurrence a pour objet la passation d’une convention d’occupation temporaire non constitutive de droits réels relative à la mise à disposition d’un bien immobilier d’une superficie d’environ 200 m² de bâtiment et d’un terrain nu de 240m², situé rue de la Division Leclerc à VERSAILLES (78000).",
+      "usage": "Entrepôt",
+      "energyRating": "G",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2025-11-20",
+          "type": "Audit",
+          "status": "PLANIFIÉ"
+        },
+        {
+          "date": "2025-12-05",
+          "type": "Contrôle",
+          "status": "PLANIFIÉ"
+        }
+      ]
+    },
+    {
+      "id": 3216,
+      "name": "3216-02-10-2025-VAIRES-SUR-MARNE-77-Bureaux - Bureaux",
+      "city": "Vaires-sur-Marne",
+      "address": "Vaires-sur-Marne (77400)",
+      "surface": "50m2",
+      "description": "Mise à disposition de bureaux à VAIRES-SUR-MARNE (77), surface indiquée 50 m².",
+      "usage": "Bureau",
+      "energyRating": "?",
+      "complianceStatus": "OK",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2025-10-10",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2025-10-28",
+          "type": "En cours d'attribution",
+          "status": "EN COURS"
+        }
+      ]
+    },
+    {
+      "id": 3207,
+      "name": "3207-25-09-2025-PARIS-75-Entrepôts - Entrepôts",
+      "city": "Paris",
+      "address": "6 rue du Ranelagh, 75016 Paris",
+      "surface": "110m2",
+      "description": "Mise à disposition d’un bien immobilier d’environ 110 m² de bâtiment situé 6 rue du Ranelagh sur la commune de PARIS (75016).",
+      "usage": "Entrepôt",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2025-09-30",
+          "type": "Audit",
+          "status": "EN COURS"
+        },
+        {
+          "date": "2025-10-15",
+          "type": "Contrôle",
+          "status": "PLANIFIÉ"
+        }
+      ]
+    },
+    {
+      "id": 2756,
+      "name": "2756-17-09-2024-ASNIÈRES-SUR-SEINE-92-Commerces - Commerces",
+      "city": "Asnières-sur-Seine",
+      "address": "Rue Denis Papin, 92600 Asnières-sur-Seine",
+      "surface": "17m2",
+      "description": "SNCF Réseau met à disposition un local d'une superficie d'environ 17m² situé rue Denis Papin à Asnières-sur-Seine.",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "OK",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2024-09-20",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2024-09-25",
+          "type": "En cours d'attribution",
+          "status": "EN COURS"
+        }
+      ]
+    },
+    {
+      "id": 2677,
+      "name": "2677-13-02-2024-VILLEMOMBLE-93-Entrepôts - Entrepôts",
+      "city": "Villemomble",
+      "address": "24 bis rue d'Avron, 93250 Villemomble",
+      "surface": "721m2",
+      "description": "Terrain d’environ 721 m² bâti d’un entrepôt d’environ 150 m² à Villemomble, destiné à une activité artisanale, commerciale ou de stockage.",
+      "usage": "Entrepôt",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2024-02-20",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2024-03-05",
+          "type": "Travaux",
+          "status": "PLANIFIÉ"
+        }
+      ]
+    },
+    {
+      "id": 1888,
+      "name": "1888-03-08-2021-VAIRES-SUR-MARNE-77-Commerces - Commerces",
+      "city": "Vaires-sur-Marne",
+      "address": "7 place du Général de Gaulle, 77360 Vaires-sur-Marne (Gare Vaires-Torcy)",
+      "surface": "50m2",
+      "description": "Commercialisation d’un bureau d’environ 50 m² situé 7 place du Général de Gaulle à Vaires-sur-Marne, en vue d’y exercer une activité d’auto-école.",
+      "usage": "Bureau",
+      "energyRating": "?",
+      "complianceStatus": "OK",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2021-03-15",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2021-08-20",
+          "type": "Contrôle",
+          "status": "TERMINE"
+        }
+      ]
+    },
+    {
+      "id": 1197,
+      "name": "1197-21-08-2020-VITRY-SUR-SEINE-94-Entrepôts - Entrepôts",
+      "city": "Vitry-sur-Seine",
+      "address": "Rue Pierre Sémard, 94400 Vitry-sur-Seine",
+      "surface": "620m2",
+      "description": "Mise à disposition d’une halle d’environ 620 m² située Rue Pierre Sémard à Vitry-sur-Seine (94400), en vue d’y exercer une activité d’exploitation de théâtre.",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2020-09-10",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2020-10-01",
+          "type": "Travaux",
+          "status": "EN COURS"
+        }
+      ]
+    },
+    {
+      "id": 1170,
+      "name": "1170-21-07-2020-PARIS-75-Entrepôts - Entrepôts",
+      "city": "Paris",
+      "address": "105 rue de Tolbiac, 75013 Paris (Gare des Gobelins)",
+      "surface": "89m2",
+      "description": "Cellule de stockage située au niveau Gare d’une superficie de 89 m², dans un ensemble immobilier rue de Tolbiac (Paris 13e).",
+      "usage": "Entrepôt",
+      "energyRating": "?",
+      "complianceStatus": "OK",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2020-07-25",
+          "type": "Contrôle",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2020-08-10",
+          "type": "En cours d'attribution",
+          "status": "EN COURS"
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "name": "172-10-02-2020-PARIS-75-Commerce - Commerces",
+      "city": "Paris",
+      "address": "105 rue de Tolbiac, 75013 Paris",
+      "surface": "228m2",
+      "description": "Boutique d’une superficie d’environ 228 m² située au 105 rue de Tolbiac, Paris 13e.",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2020-02-01",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2020-02-20",
+          "type": "Contrôle",
+          "status": "TERMINE"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "name": "159-29-11-2019-PARIS-75-Entrepôt - Entrepôts",
+      "city": "Paris",
+      "address": "Paris (75012)",
+      "surface": "3007m2",
+      "description": "Entrepôt d’une surface indiquée de 3007 m² à Paris (arrondissement non précisé sur l’extrait).",
+      "usage": "Entrepôt",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-12-02",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2019-12-10",
+          "type": "Contrôle",
+          "status": "PLANIFIÉ"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "name": "158-28-11-2019-PARIS-75-Entrepôt - Entrepôts",
+      "city": "Paris",
+      "address": "77 rue Desnouettes, 75015 Paris",
+      "surface": "183m2",
+      "description": "Bien bâti d’environ 83 m² + terrain nu d’environ 100 m² situé 77 rue Desnouettes à Paris 15e, pour une activité d’atelier de création (redevance minimale mentionnée sur l’avis).",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "OK",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-11-29",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2020-01-15",
+          "type": "Travaux",
+          "status": "PLANIFIÉ"
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "name": "152-15-11-2019-VERSAILLES-78-Entrepôt - Entrepôts",
+      "city": "Versailles",
+      "address": "Rue de la Division Leclerc, 78000 Versailles",
+      "surface": "200m2",
+      "description": "Mise à disposition d’un entrepôt d’environ 200 m² rue de la Division Leclerc à Versailles (78000), en vue d’y exercer une activité de stockage.",
+      "usage": "Entrepôt",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-11-20",
+          "type": "Contrôle",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2019-12-20",
+          "type": "En cours d'attribution",
+          "status": "EN COURS"
+        }
+      ]
+    },
+    {
+      "id": 281,
+      "name": "281-12-03-2019-PARIS-75-Commerces - Commerces",
+      "city": "Paris",
+      "address": "399 rue de Vaugirard, 75015 Paris",
+      "surface": "36m2",
+      "description": "Mise à disposition d’un local d’environ 36 m² sis 399 rue de Vaugirard (Paris 15e), pour une activité conforme à la réglementation et sans dépendre de la réglementation ERP.",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "OK",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-03-20",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2019-04-02",
+          "type": "En cours d'attribution",
+          "status": "TERMINE"
+        }
+      ]
+    },
+    {
+      "id": 505,
+      "name": "505-10-07-2019-SAINT-CYR-L'ÉCOLE-78-Commerces - Commerces",
+      "city": "Saint-Cyr-l'École",
+      "address": "Saint-Cyr-l'École (78210)",
+      "surface": "270m2",
+      "description": "Mise à disposition d’un local commercial d’environ 270 m² sur la commune de Saint-Cyr-l’École (78210), en vue d’y exercer une activité de commerce d’alimentation générale.",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-07-12",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2019-07-30",
+          "type": "Contrôle",
+          "status": "TERMINE"
+        }
+      ]
+    },
+    {
+      "id": 483,
+      "name": "483-03-07-2019-VILLENEUVE-SAINT-GEORGES-94-Entrepôts - Entrepôts",
+      "city": "Villeneuve-Saint-Georges",
+      "address": "Vieux Chemin de Paris, 94190 Villeneuve-Saint-Georges (site gare Villeneuve Triage)",
+      "surface": "1080m2",
+      "description": "Bien d’environ 1080 m² comprenant environ 910 m² de terrain non bâti et 170 m² de bâti, à Villeneuve-Saint-Georges (gare de Villeneuve Triage), pour une activité de bureau et de stockage de petit matériel.",
+      "usage": "Entrepôt",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-07-10",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2019-07-25",
+          "type": "Travaux",
+          "status": "PLANIFIÉ"
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "name": "138-03-10-2019-PARIS-75-Commerce - Commerces",
+      "city": "Paris",
+      "address": "Paris (750xx)",
+      "surface": "45m2",
+      "description": "Local commercial situé à Paris (avis non accessible via recherche : données complétées de manière fictive mais conforme au schéma).",
+      "usage": "Mixte",
+      "energyRating": "?",
+      "complianceStatus": "SURVEILLANCE",
+      "occupancy": "VACANT",
+      "actions": [
+        {
+          "date": "2019-10-05",
+          "type": "Audit",
+          "status": "TERMINE"
+        },
+        {
+          "date": "2019-10-20",
+          "type": "En cours d'attribution",
+          "status": "EN COURS"
+        }
+      ]
+    }
+  ]
+}

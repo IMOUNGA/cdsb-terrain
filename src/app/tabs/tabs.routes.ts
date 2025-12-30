@@ -7,30 +7,34 @@ export const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadComponent: () =>
-          import('../tab1/tab1.page').then((m) => m.Tab1Page),
+        path: 'business',
+        loadChildren: () =>
+          import('../batiments/batiments.routes').then((m) => m.BATIMENTS_ROUTES),
       },
       {
-        path: 'tab2',
+        path: 'carte',
         loadComponent: () =>
-          import('../tab2/tab2.page').then((m) => m.Tab2Page),
+          import('../carte/carte.page').then((m) => m.CartePage),
       },
       {
-        path: 'tab3',
+        path: 'actions',
         loadComponent: () =>
-          import('../tab3/tab3.page').then((m) => m.Tab3Page),
+          import('../actions/actions.page').then((m) => m.ActionsPage),
+      },
+      {
+        path: 'alertes',
+        loadComponent: () =>
+          import('../alertes/alertes.page').then((m) => m.AlertesPage),
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/business',
         pathMatch: 'full',
       },
     ],
   },
   {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full',
+    path: '**',
+    redirectTo: '/tabs/business',
   },
 ];

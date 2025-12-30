@@ -1,0 +1,17 @@
+.subtitle-toolbar {
+  --min-height: 0;   // évite le "gros" toolbar iOS
+  --padding-top: 0;
+  --padding-bottom: 0;
+}
+
+.subtitle {
+  display: block;
+  padding: 0 16px 12px 16px; // alignement iOS natif
+  text-align: start;
+}
+
+.content {
+  padding: 0 16px 16px 16px; // même colonne que le sous-titre
+  display: grid;
+  gap: 12px;
+}
