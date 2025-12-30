@@ -7,7 +7,7 @@ export const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'business',
+        path: 'batiments',
         loadChildren: () =>
           import('../batiments/batiments.routes').then((m) => m.BATIMENTS_ROUTES),
       },
@@ -28,13 +28,13 @@ export const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/business',
+        redirectTo: '/tabs/batiments',
         pathMatch: 'full',
       },
     ],
   },
   {
     path: '**',
-    redirectTo: '/tabs/business',
+    redirectTo: '/tabs/batiments',
   },
 ];

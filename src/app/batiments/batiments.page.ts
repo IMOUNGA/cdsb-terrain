@@ -7,7 +7,7 @@ import {
 } from "../../components/property-presentation-card/property-presentation-card.component";
 
 @Component({
-  selector: 'app-business-page',
+  selector: 'app-batiments-page',
   templateUrl: 'batiments.page.html',
   styleUrls: ['batiments.page.scss'],
   imports: [IonContent, PropertyPresentationCardComponent, IonTitle, IonHeader, IonToolbar, IonText],
