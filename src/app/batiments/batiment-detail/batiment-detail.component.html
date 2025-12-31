@@ -12,23 +12,21 @@
       }">
       <div class="infos-above">
         <p class="occupancy-content"
-          [style.background-color]="OCCUPANCY[property.occupancy].color"
-          [style.color]="OCCUPANCY[property.occupancy].textColor">{{ OCCUPANCY[property.occupancy].label }}</p>
+           [style.background-color]="OCCUPANCY[property.occupancy].color"
+           [style.color]="OCCUPANCY[property.occupancy].textColor">{{ OCCUPANCY[property.occupancy].label }}</p>
         <p class="energy-content"
-          [style.background-color]="ENERGY[property.energyRating].color"
-          [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
+           [style.background-color]="ENERGY[property.energyRating].color"
+           [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
       </div>
 
     </div>
 
-    <div class="content ion-padding-horizontal">
-      <div class="infos-content">
-        <div class="title-subtitle">
-          <h1>{{ property.name }}</h1>
-          <h2>{{ property.city }}</h2>
-          <p>{{ property.address }}</p>
-          <p>{{ property.usage }} - {{ property.surface }}</p>
-        </div>
+    <div class="content ion-padding">
+      <div class="property-infos-content">
+        <h1>{{ property.name }}</h1>
+        <h2>{{ property.city }}</h2>
+        <p>{{ property.address }}</p>
+        <p class="property-usage">{{ property.usage }} - {{ property.surface }}</p>
       </div>
 
       <div class="presentation-content">
