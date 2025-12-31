@@ -26,13 +26,15 @@
         <h1>{{ property.name }}</h1>
         <h2>{{ property.city }}</h2>
         <p>{{ property.address }}</p>
-        <p class="property-usage">{{ property.usage }} - {{ property.surface }}</p>
+        <p class="bold">{{ property.usage }} - {{ property.surface }}</p>
       </div>
 
-      <div class="presentation-content">
-        <p>Présentation</p>
-        <p>{{ property.description }}</p>
-      </div>
+      @if (property.description) {
+        <div class="presentation-content">
+          <p>Description</p>
+          <p>{{ property.description }}</p>
+        </div>
+      }
 
       <div class="compliance-content">
         <p>Niveau de conformité</p>
