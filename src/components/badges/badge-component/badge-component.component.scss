@@ -2,4 +2,8 @@
   padding: var(--card-padding);
   background-color: #f4f4f4;
   border-radius: var(--border-radius);
+
+  :first-child {
+    font-weight: bold;
+  }
 }
