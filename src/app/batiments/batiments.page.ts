@@ -10,6 +10,7 @@ import {
   selector: 'app-batiments-page',
   templateUrl: 'batiments.page.html',
   styleUrls: ['batiments.page.scss'],
+  standalone: true,
   imports: [IonContent, PropertyPresentationCardComponent, IonTitle, IonHeader, IonToolbar, IonText],
 })
 export class BatimentsPage {

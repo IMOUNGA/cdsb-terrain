@@ -1,3 +1,21 @@
+@let property = property$ | async;
+@let img = "https://ionicframework.com/docs/img/demos/card-media.png";
+
 <ion-content [fullscreen]="true">
-  <p>Hello</p>
+  @if (property) {
+    <div
+      class="img-container"
+      [ngStyle]="{
+        'background-image': `url(${img})`,
+        'background-position': 'center',
+        'background-size': 'cover'
+      }">
+      <p
+        [style.background-color]="ENERGY[property.energyRating].color"
+        [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
+    </div>
+  }
+
+
+
 </ion-content>

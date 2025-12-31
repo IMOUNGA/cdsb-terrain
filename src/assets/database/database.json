@@ -1,5 +1,5 @@
 {
-  "property": [
+  "properties": [
     {
       "id": 3331,
       "name": "3331-19-11-2025-VERSAILLES-78-Entrepôts - Entrepôts",
@@ -32,7 +32,7 @@
       "surface": "50m2",
       "description": "Mise à disposition de bureaux à VAIRES-SUR-MARNE (77), surface indiquée 50 m².",
       "usage": "Bureau",
-      "energyRating": "?",
+      "energyRating": "A",
       "complianceStatus": "OK",
       "occupancy": "VACANT",
       "actions": [
@@ -56,7 +56,7 @@
       "surface": "110m2",
       "description": "Mise à disposition d’un bien immobilier d’environ 110 m² de bâtiment situé 6 rue du Ranelagh sur la commune de PARIS (75016).",
       "usage": "Entrepôt",
-      "energyRating": "?",
+      "energyRating": "B",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [
@@ -80,7 +80,7 @@
       "surface": "17m2",
       "description": "SNCF Réseau met à disposition un local d'une superficie d'environ 17m² situé rue Denis Papin à Asnières-sur-Seine.",
       "usage": "Mixte",
-      "energyRating": "?",
+      "energyRating": "C",
       "complianceStatus": "OK",
       "occupancy": "VACANT",
       "actions": [
@@ -128,7 +128,7 @@
       "surface": "50m2",
       "description": "Commercialisation d’un bureau d’environ 50 m² situé 7 place du Général de Gaulle à Vaires-sur-Marne, en vue d’y exercer une activité d’auto-école.",
       "usage": "Bureau",
-      "energyRating": "?",
+      "energyRating": "D",
       "complianceStatus": "OK",
       "occupancy": "VACANT",
       "actions": [
@@ -152,7 +152,7 @@
       "surface": "620m2",
       "description": "Mise à disposition d’une halle d’environ 620 m² située Rue Pierre Sémard à Vitry-sur-Seine (94400), en vue d’y exercer une activité d’exploitation de théâtre.",
       "usage": "Mixte",
-      "energyRating": "?",
+      "energyRating": "E",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [
@@ -176,7 +176,7 @@
       "surface": "89m2",
       "description": "Cellule de stockage située au niveau Gare d’une superficie de 89 m², dans un ensemble immobilier rue de Tolbiac (Paris 13e).",
       "usage": "Entrepôt",
-      "energyRating": "?",
+      "energyRating": "F",
       "complianceStatus": "OK",
       "occupancy": "VACANT",
       "actions": [
@@ -200,7 +200,7 @@
       "surface": "228m2",
       "description": "Boutique d’une superficie d’environ 228 m² située au 105 rue de Tolbiac, Paris 13e.",
       "usage": "Mixte",
-      "energyRating": "?",
+      "energyRating": "A",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [
@@ -224,7 +224,7 @@
       "surface": "3007m2",
       "description": "Entrepôt d’une surface indiquée de 3007 m² à Paris (arrondissement non précisé sur l’extrait).",
       "usage": "Entrepôt",
-      "energyRating": "?",
+      "energyRating": "B",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [
@@ -248,7 +248,7 @@
       "surface": "183m2",
       "description": "Bien bâti d’environ 83 m² + terrain nu d’environ 100 m² situé 77 rue Desnouettes à Paris 15e, pour une activité d’atelier de création (redevance minimale mentionnée sur l’avis).",
       "usage": "Mixte",
-      "energyRating": "?",
+      "energyRating": "C",
       "complianceStatus": "OK",
       "occupancy": "VACANT",
       "actions": [
@@ -272,7 +272,7 @@
       "surface": "200m2",
       "description": "Mise à disposition d’un entrepôt d’environ 200 m² rue de la Division Leclerc à Versailles (78000), en vue d’y exercer une activité de stockage.",
       "usage": "Entrepôt",
-      "energyRating": "?",
+      "energyRating": "D",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [
@@ -296,7 +296,7 @@
       "surface": "36m2",
       "description": "Mise à disposition d’un local d’environ 36 m² sis 399 rue de Vaugirard (Paris 15e), pour une activité conforme à la réglementation et sans dépendre de la réglementation ERP.",
       "usage": "Mixte",
-      "energyRating": "?",
+      "energyRating": "E",
       "complianceStatus": "OK",
       "occupancy": "VACANT",
       "actions": [
@@ -320,7 +320,7 @@
       "surface": "270m2",
       "description": "Mise à disposition d’un local commercial d’environ 270 m² sur la commune de Saint-Cyr-l’École (78210), en vue d’y exercer une activité de commerce d’alimentation générale.",
       "usage": "Mixte",
-      "energyRating": "?",
+      "energyRating": "F",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [
@@ -344,7 +344,7 @@
       "surface": "1080m2",
       "description": "Bien d’environ 1080 m² comprenant environ 910 m² de terrain non bâti et 170 m² de bâti, à Villeneuve-Saint-Georges (gare de Villeneuve Triage), pour une activité de bureau et de stockage de petit matériel.",
       "usage": "Entrepôt",
-      "energyRating": "?",
+      "energyRating": "G",
       "complianceStatus": "SURVEILLANCE",
       "occupancy": "VACANT",
       "actions": [

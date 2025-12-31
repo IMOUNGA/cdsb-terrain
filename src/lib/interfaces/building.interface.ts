@@ -20,7 +20,7 @@ export interface BuildingAction {
 }
 
 type TypeOfProperty = 'Entrepôt' | 'Bureau' | 'Logement' | 'Mixte';
-type EnergyRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | '?';
+export type EnergyRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | '?';
 type ComplianceStatus = 'OK' | 'SURVEILLANCE' | 'NON CONFORME';
 type Occupancy = 'OCCUPÉ' | 'VACANT';
 type BuildingActionType = 'Audit' | 'Travaux' | 'Contrôle' | 'En cours d\'attribution';

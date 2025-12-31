@@ -3,7 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {find, map, Observable, tap} from "rxjs";
 import {Property} from "../../../lib/interfaces";
 
-type PropertiesResponse = { property: Property[] };
+type PropertiesResponse = { properties: Property[] };
 type PropertyResponse = { property: Property };
 
 @Injectable({
@@ -15,14 +15,15 @@ export class PropertyService {
   getProperties(): Observable<Property[]> {
     return this.httpClient.get<PropertiesResponse>('/assets/database/database.json').pipe(
       tap(properties => console.log(properties)),
-      map(properties => properties.property)
+      map(properties => properties.properties)
     );
   }
 
-  getPropertyById(id: number): Observable<Property | undefined> {
-    return this.httpClient.get<PropertyResponse>('/assets/database/database.json').pipe(
-      map(properties => properties.property),
-      find(property => property.id === id),
-  );
+  getPropertyById(id: number): Observable<Property | null> {
+    return this.httpClient.get<PropertiesResponse>('/assets/database/database.json')
+      .pipe(
+        map(data => data.properties.find(property => property.id === id) ?? null),
+        tap(property => console.log(property))
+      );
   }
 }

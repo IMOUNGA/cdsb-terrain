@@ -1,36 +1,41 @@
-import {Component, computed, effect, inject, OnInit, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, effect, inject, OnInit, Signal, signal} from '@angular/core';
 import {IonContent} from "@ionic/angular/standalone";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
 import {toSignal} from "@angular/core/rxjs-interop";
+import {AsyncPipe, NgStyle} from "@angular/common";
+import {first, Observable, of} from "rxjs";
+import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
 
 @Component({
   selector: 'app-batiment-detail',
   templateUrl: './batiment-detail.component.html',
   styleUrls: ['./batiment-detail.component.scss'],
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
-    IonContent
+    IonContent,
+    NgStyle,
+    AsyncPipe
   ]
 })
 export class BatimentDetailComponent {
   private route = inject(ActivatedRoute);
   private propertyService = inject(PropertyService);
+  readonly ENERGY = ENERGY_RATING_CONFIG;
 
-  private readonly currentUrlId = this.route.snapshot.paramMap.get('id');
-
-  private readonly propertyFromState = signal<Property | null>(
-    history.state?.property ?? null
-  );
-
-  private readonly propertyFromApi = this.currentUrlId
-    ? toSignal(this.propertyService.getPropertyById(+this.currentUrlId), {initialValue: null})
-    : signal<Property | null>(null);
-
-
-  readonly property = computed(() => this.propertyFromState() ?? this.propertyFromApi);
+  property$: Observable<Property | null> = this.initProperty();
 
   constructor() {
-    effect(() => {console.log(this.property())});
+    this.initProperty();
   }
+
+  initProperty () {
+    const id = this.route.snapshot.paramMap.get('id');
+    if (!id) return of(null);
+
+    return this.propertyService.getPropertyById(+id)
+  }
+
 }
