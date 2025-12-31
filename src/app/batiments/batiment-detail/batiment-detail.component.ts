@@ -1,12 +1,12 @@
-import {ChangeDetectionStrategy, Component, computed, effect, inject, OnInit, Signal, signal} from '@angular/core';
-import {IonContent} from "@ionic/angular/standalone";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
+import {IonContent, IonIcon} from "@ionic/angular/standalone";
+import {ActivatedRoute} from "@angular/router";
 import {Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
-import {toSignal} from "@angular/core/rxjs-interop";
 import {AsyncPipe, NgStyle} from "@angular/common";
-import {first, Observable, of} from "rxjs";
+import {Observable, of} from "rxjs";
 import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
+import {speedometerOutline} from "ionicons/icons";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -17,7 +17,8 @@ import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
   imports: [
     IonContent,
     NgStyle,
-    AsyncPipe
+    AsyncPipe,
+    IonIcon
   ]
 })
 export class BatimentDetailComponent {
@@ -38,4 +39,5 @@ export class BatimentDetailComponent {
     return this.propertyService.getPropertyById(+id)
   }
 
+  protected readonly speedometerOutline = speedometerOutline;
 }

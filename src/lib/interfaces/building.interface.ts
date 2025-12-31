@@ -21,7 +21,7 @@ export interface BuildingAction {
 
 type TypeOfProperty = 'Entrepôt' | 'Bureau' | 'Logement' | 'Mixte';
 export type EnergyRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | '?';
-type ComplianceStatus = 'OK' | 'SURVEILLANCE' | 'NON CONFORME';
-type Occupancy = 'OCCUPÉ' | 'VACANT';
+export type ComplianceStatus = 'OK' | 'SURVEILLANCE' | 'NON CONFORME';
+export type Occupancy = 'OCCUPÉ' | 'VACANT';
 type BuildingActionType = 'Audit' | 'Travaux' | 'Contrôle' | 'En cours d\'attribution';
-type BuildingActionStatus = 'TERMINE' | 'EN COURS' | 'PLANIFIÉ';
+export type BuildingActionStatus = 'TERMINÉ' | 'EN COURS' | 'PLANIFIÉ';

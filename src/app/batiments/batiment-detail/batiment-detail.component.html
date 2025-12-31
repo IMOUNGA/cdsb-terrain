@@ -10,12 +10,59 @@
         'background-position': 'center',
         'background-size': 'cover'
       }">
-      <p
-        [style.background-color]="ENERGY[property.energyRating].color"
-        [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
+      <div class="infos-above">
+        <p
+          [style.background-color]="ENERGY[property.energyRating].color"
+          [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
+        <p
+          [style.background-color]="ENERGY[property.energyRating].color"
+          [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
+      </div>
+
     </div>
+
+    <div class="content ion-padding-horizontal">
+      <div class="infos-content">
+        <div class="title-subtitle">
+          <h1>{{ property.name }}</h1>
+          <h2>{{ property.city }}</h2>
+          <p>{{ property.address }}</p>
+          <p>{{ property.usage }} - {{ property.surface }}</p>
+        </div>
+      </div>
+
+      <div class="presentation-content">
+        <p>Présentation</p>
+        <p>{{ property.description }}</p>
+      </div>
+
+      <div class="compliance-content">
+        <p>Niveau de conformité</p>
+        <p>{{ property.complianceStatus }}</p>
+      </div>
+
+      @if (property.actions) {
+        <div class="actions-content">
+          <p>Action{{ property.actions.length > 1 ? 's' : null }} en cours</p>
+
+          <div class="actions-items">
+            @for (action of property.actions; track $index) {
+              <div class="action-item">
+                <div class="action-item-type">
+                  <p>{{ action.type }}</p>
+                  <ion-icon [icon]="speedometerOutline"></ion-icon>
+                </div>
+                <div class="action-item-status">
+                  <p>{{ action.date }}</p>
+                  <p>{{ action.status }}</p>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+
+
   }
-
-
-
 </ion-content>
