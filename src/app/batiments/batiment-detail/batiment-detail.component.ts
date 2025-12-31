@@ -7,6 +7,7 @@ import {AsyncPipe, NgStyle} from "@angular/common";
 import {Observable, of} from "rxjs";
 import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
 import {speedometerOutline} from "ionicons/icons";
+import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -25,6 +26,7 @@ export class BatimentDetailComponent {
   private route = inject(ActivatedRoute);
   private propertyService = inject(PropertyService);
   readonly ENERGY = ENERGY_RATING_CONFIG;
+  readonly OCCUPANCY = OCCUPANCY_STATUS_CONFIG;
 
   property$: Observable<Property | null> = this.initProperty();
 

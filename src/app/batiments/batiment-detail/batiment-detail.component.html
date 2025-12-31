@@ -11,10 +11,10 @@
         'background-size': 'cover'
       }">
       <div class="infos-above">
-        <p
-          [style.background-color]="ENERGY[property.energyRating].color"
-          [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
-        <p
+        <p class="occupancy-content"
+          [style.background-color]="OCCUPANCY[property.occupancy].color"
+          [style.color]="OCCUPANCY[property.occupancy].textColor">{{ OCCUPANCY[property.occupancy].label }}</p>
+        <p class="energy-content"
           [style.background-color]="ENERGY[property.energyRating].color"
           [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
       </div>
