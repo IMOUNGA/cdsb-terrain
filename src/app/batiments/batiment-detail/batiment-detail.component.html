@@ -36,6 +36,9 @@
         </div>
       }
 
+      @if (property.complianceStatus) {
+        <app-badge-component title="Niveau de conformité" [text]="property.complianceStatus" />
+      }
       <div class="compliance-content">
         <p>Niveau de conformité</p>
         <p>{{ property.complianceStatus }}</p>
@@ -66,3 +69,15 @@
 
   }
 </ion-content>
+
+
+<!-- TODO
+
+ Changer ceci :
+<p class="occupancy-content"
+           [style.background-color]="OCCUPANCY[property.occupancy].color"
+           [style.color]="OCCUPANCY[property.occupancy].textColor">{{ OCCUPANCY[property.occupancy].label }}</p>
+
+En un <app-badge config=CONSTANTE value=property.x
+
+-->

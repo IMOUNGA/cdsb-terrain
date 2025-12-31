@@ -8,6 +8,7 @@ import {Observable, of} from "rxjs";
 import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
 import {speedometerOutline} from "ionicons/icons";
 import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
+import {BadgeComponentComponent} from "../../../components/badges/badge-component/badge-component.component";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -19,7 +20,8 @@ import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color
     IonContent,
     NgStyle,
     AsyncPipe,
-    IonIcon
+    IonIcon,
+    BadgeComponentComponent
   ]
 })
 export class BatimentDetailComponent {
