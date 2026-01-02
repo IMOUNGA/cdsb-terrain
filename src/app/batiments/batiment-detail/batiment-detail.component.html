@@ -37,7 +37,7 @@
       }
 
       @if (property.complianceStatus) {
-        <app-badge-component title="Niveau de conformité" [text]="property.complianceStatus" />
+        <app-badge-component title="Niveau de conformité" [text]="property.complianceStatus" [icon]="complianceIconCheck(property.complianceStatus)"  />
       }
 
       @if (property.actions) {

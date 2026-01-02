@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {IonContent, IonIcon} from "@ionic/angular/standalone";
 import {ActivatedRoute} from "@angular/router";
-import {Property} from "../../../lib/interfaces";
+import {ComplianceStatus, Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
 import {AsyncPipe, NgStyle} from "@angular/common";
 import {Observable, of} from "rxjs";
@@ -9,6 +9,7 @@ import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
 import {speedometerOutline} from "ionicons/icons";
 import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
 import {BadgeComponentComponent} from "../../../components/badges/badge-component/badge-component.component";
+import {AppIconKey} from "../../../lib/utils/registry-icons";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -36,11 +37,24 @@ export class BatimentDetailComponent {
     this.initProperty();
   }
 
-  initProperty () {
+  initProperty() {
     const id = this.route.snapshot.paramMap.get('id');
     if (!id) return of(null);
 
     return this.propertyService.getPropertyById(+id)
+  }
+
+  complianceIconCheck(status: ComplianceStatus): AppIconKey {
+    switch (status) {
+      case "OK":
+        return 'thumbs-up-outline';
+      case "NON CONFORME":
+        return 'thumbs-down-outline';
+      case "SURVEILLANCE":
+        return 'warning-outline';
+      default:
+          return 'help-circle-outline';
+    }
   }
 
   protected readonly speedometerOutline = speedometerOutline;
