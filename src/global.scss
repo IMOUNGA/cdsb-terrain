@@ -52,18 +52,6 @@ ion-content::part(scroll) {
   font-weight: bold;
 }
 
-.page-title {
-  h2 {
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  h3 {
-    font-size: 1rem;
-    color: grey;
-  }
-}
-
 .coming-soon-content {
   display: flex;
   flex-direction: column;
@@ -73,6 +61,7 @@ ion-content::part(scroll) {
 
   font-family: var(--ion-font-family-fancy), sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
   text-align: center;
 
   animation: myAnim 2s ease 0s 1 normal forwards;
