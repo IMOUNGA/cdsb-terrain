@@ -1,4 +1,4 @@
-import {Component, inject, input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject, input} from '@angular/core';
 import {Property} from "../../lib/interfaces";
 import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from "@ionic/angular/standalone";
 import {TruncatePipe} from "../../pipes/truncates/truncate-pipe";
@@ -8,6 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   selector: 'app-property-presentation-card',
   templateUrl: './property-presentation-card.component.html',
   styleUrls: ['./property-presentation-card.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     IonCard,
     IonCardTitle,

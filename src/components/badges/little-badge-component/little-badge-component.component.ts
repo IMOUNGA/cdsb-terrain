@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 
 type CssColor = string;
 type BadgeStyle = 'circle' | 'rectangle';
@@ -8,6 +8,7 @@ type BadgeStyle = 'circle' | 'rectangle';
   templateUrl: './little-badge-component.component.html',
   styleUrls: ['./little-badge-component.component.scss'],
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LittleBadgeComponentComponent {
   readonly backgroundColor = input.required<CssColor>();

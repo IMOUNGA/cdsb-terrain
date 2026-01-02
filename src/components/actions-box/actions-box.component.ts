@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 import {BuildingAction} from "../../lib/interfaces";
 import {ActionBadgeComponentComponent} from "../badges/action-badge-component/action-badge-component.component";
 
@@ -7,6 +7,7 @@ import {ActionBadgeComponentComponent} from "../badges/action-badge-component/ac
   templateUrl: './actions-box.component.html',
   styleUrls: ['./actions-box.component.scss'],
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     ActionBadgeComponentComponent
   ]

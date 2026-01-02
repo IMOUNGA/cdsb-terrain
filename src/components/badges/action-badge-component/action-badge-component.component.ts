@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 import {BuildingAction} from "../../../lib/interfaces";
 import {IonIcon} from "@ionic/angular/standalone";
 import {speedometerOutline} from "ionicons/icons";
@@ -8,6 +8,7 @@ import {speedometerOutline} from "ionicons/icons";
   templateUrl: './action-badge-component.component.html',
   styleUrls: ['./action-badge-component.component.scss'],
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     IonIcon
   ]
