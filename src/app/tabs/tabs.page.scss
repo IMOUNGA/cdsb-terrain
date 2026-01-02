@@ -2,7 +2,8 @@ ion-tab-bar {
   position: fixed;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(90%) translateX(-50%);
+  opacity: 0;
   padding: .5rem;
 
   width: 90%;
@@ -11,4 +12,18 @@ ion-tab-bar {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 3rem;
   border: none;
+
+  animation: fadeInTop .5s forwards;
+}
+
+@keyframes fadeInTop {
+  from {
+    transform: translateY(90%) translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%) translateX(-50%);
+    opacity: 1;
+  }
 }
