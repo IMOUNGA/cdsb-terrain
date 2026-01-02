@@ -41,28 +41,9 @@
       }
 
       @if (property.actions) {
-        <div class="actions-content">
-          <p>Action{{ property.actions.length > 1 ? 's' : null }} en cours</p>
-
-          <div class="actions-items">
-            @for (action of property.actions; track $index) {
-              <div class="action-item">
-                <div class="action-item-type">
-                  <p>{{ action.type }}</p>
-                  <ion-icon [icon]="speedometerOutline"></ion-icon>
-                </div>
-                <div class="action-item-status">
-                  <p>{{ action.date }}</p>
-                  <p>{{ action.status }}</p>
-                </div>
-              </div>
-            }
-          </div>
-        </div>
+        <app-actions-box [actionsList]="property.actions"/>
       }
     </div>
-
-
   }
 </ion-content>
 

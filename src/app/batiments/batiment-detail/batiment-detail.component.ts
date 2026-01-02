@@ -11,6 +11,10 @@ import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color
 import {BadgeComponentComponent} from "../../../components/badges/badge-component/badge-component.component";
 import {AppIconKey} from "../../../lib/utils/registry-icons";
 import {COMPLIANCE_STATUS_CONFIG} from "../../../lib/utils/compliance-status";
+import {
+  ActionBadgeComponentComponent
+} from "../../../components/badges/action-badge-component/action-badge-component.component";
+import {ActionsBoxComponent} from "../../../components/actions-box/actions-box.component";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -23,7 +27,9 @@ import {COMPLIANCE_STATUS_CONFIG} from "../../../lib/utils/compliance-status";
     NgStyle,
     AsyncPipe,
     IonIcon,
-    BadgeComponentComponent
+    BadgeComponentComponent,
+    ActionBadgeComponentComponent,
+    ActionsBoxComponent
   ]
 })
 export class BatimentDetailComponent {

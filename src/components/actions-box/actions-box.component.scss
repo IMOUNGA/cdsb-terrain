@@ -1,0 +1,17 @@
+.actions-content {
+  background-color: #fff;
+  border: 1px #f4f4f4 solid;
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+
+  p {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+  }
+
+  .actions-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

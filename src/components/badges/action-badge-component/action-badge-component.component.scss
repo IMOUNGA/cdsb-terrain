@@ -1,0 +1,25 @@
+.action-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--card-padding);
+  border: 1px #f4f4f4 solid;
+  border-radius: var(--border-radius);
+  background-color: #f3aaaa;
+  color: #fff;
+  font-weight: bold;
+
+  p {
+    margin: 0;
+  }
+}
+
+.action-item-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-item-status {
+  display: flex;
+  justify-content: space-between;
+}

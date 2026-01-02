@@ -1,0 +1,11 @@
+@let actions = actionsList();
+
+<div class="actions-content">
+  <p>Action{{ actions.length > 1 ? 's' : null }} en cours</p>
+
+  <div class="actions-items">
+    @for (a of actions; track $index) {
+      <app-action-badge-component [action]="a" />
+    }
+  </div>
+</div>

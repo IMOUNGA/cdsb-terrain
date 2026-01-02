@@ -1,0 +1,12 @@
+@let a = action();
+
+<div class="action-item">
+  <div class="action-item-type">
+    <p>{{ a.type }}</p>
+    <ion-icon [icon]="speedometerOutline" />
+  </div>
+  <div class="action-item-status">
+    <p>{{ a.date }}</p>
+    <p>{{ a.status }}</p>
+  </div>
+</div>
