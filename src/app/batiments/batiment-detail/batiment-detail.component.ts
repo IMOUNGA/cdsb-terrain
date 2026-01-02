@@ -1,20 +1,19 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {IonContent, IonIcon} from "@ionic/angular/standalone";
+import {IonContent} from "@ionic/angular/standalone";
 import {ActivatedRoute} from "@angular/router";
 import {ComplianceStatus, Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
 import {AsyncPipe, NgStyle} from "@angular/common";
 import {Observable, of} from "rxjs";
 import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
-import {speedometerOutline} from "ionicons/icons";
 import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
 import {BadgeComponentComponent} from "../../../components/badges/badge-component/badge-component.component";
 import {AppIconKey} from "../../../lib/utils/registry-icons";
 import {COMPLIANCE_STATUS_CONFIG} from "../../../lib/utils/compliance-status";
-import {
-  ActionBadgeComponentComponent
-} from "../../../components/badges/action-badge-component/action-badge-component.component";
 import {ActionsBoxComponent} from "../../../components/actions-box/actions-box.component";
+import {
+  LittleBadgeComponentComponent
+} from "../../../components/badges/little-badge-component/little-badge-component.component";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -26,10 +25,9 @@ import {ActionsBoxComponent} from "../../../components/actions-box/actions-box.c
     IonContent,
     NgStyle,
     AsyncPipe,
-    IonIcon,
     BadgeComponentComponent,
-    ActionBadgeComponentComponent,
-    ActionsBoxComponent
+    ActionsBoxComponent,
+    LittleBadgeComponentComponent
   ]
 })
 export class BatimentDetailComponent {
@@ -63,6 +61,4 @@ export class BatimentDetailComponent {
           return {icon: 'help-circle-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
     }
   }
-
-  protected readonly speedometerOutline = speedometerOutline;
 }

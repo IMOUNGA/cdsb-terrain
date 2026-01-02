@@ -10,31 +10,6 @@
     align-items: end;
     justify-content: space-between;
     width: 100%;
-
-    > p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      margin: 0;
-      font-weight: bold;
-    }
-
-    .energy-content {
-      padding: var(--card-padding);
-      height: 3rem;
-      width: 3rem;
-
-      font-size: 1.2rem;
-      color: #fff;
-      border-radius: 50%;
-    }
-
-    .occupancy-content {
-      height: 2rem;
-      width: 10rem;
-      border-radius: var(--border-radius);
-    }
   }
 }
 

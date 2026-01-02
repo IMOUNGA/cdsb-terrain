@@ -11,12 +11,14 @@
         'background-size': 'cover'
       }">
       <div class="infos-above">
-        <p class="occupancy-content"
-           [style.background-color]="OCCUPANCY[property.occupancy].color"
-           [style.color]="OCCUPANCY[property.occupancy].textColor">{{ OCCUPANCY[property.occupancy].label }}</p>
-        <p class="energy-content"
-           [style.background-color]="ENERGY[property.energyRating].color"
-           [style.color]="ENERGY[property.energyRating].textColor">{{ property.energyRating }}</p>
+        <app-little-badge-component
+          [backgroundColor]="OCCUPANCY[property.occupancy].color"
+          [textColor]="OCCUPANCY[property.occupancy].textColor"
+          [text]="OCCUPANCY[property.occupancy].label" type="rectangle" />
+        <app-little-badge-component
+          [backgroundColor]="ENERGY[property.energyRating].color"
+          [textColor]="ENERGY[property.energyRating].textColor"
+          [text]="ENERGY[property.energyRating].label" type="circle" />
       </div>
 
     </div>
@@ -46,15 +48,3 @@
     </div>
   }
 </ion-content>
-
-
-<!-- TODO
-
- Changer ceci :
-<p class="occupancy-content"
-           [style.background-color]="OCCUPANCY[property.occupancy].color"
-           [style.color]="OCCUPANCY[property.occupancy].textColor">{{ OCCUPANCY[property.occupancy].label }}</p>
-
-En un <app-badge config=CONSTANTE value=property.x
-
--->
