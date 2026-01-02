@@ -5,11 +5,7 @@
   @if (property) {
     <div
       class="img-container"
-      [ngStyle]="{
-        'background-image': `url(${img})`,
-        'background-position': 'center',
-        'background-size': 'cover'
-      }">
+      [style.background-image]="`url(${img})`">
       <div class="infos-above">
         <app-little-badge-component
           [backgroundColor]="OCCUPANCY[property.occupancy].color"
@@ -32,10 +28,7 @@
       </div>
 
       @if (property.description) {
-        <div class="description-content">
-          <p>Description</p>
-          <p>{{ property.description }}</p>
-        </div>
+        <app-text-sections title="Description" [text]="property.description" textAlign="justify"/>
       }
 
       @if (property.complianceStatus) {

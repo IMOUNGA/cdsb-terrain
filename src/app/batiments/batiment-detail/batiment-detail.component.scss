@@ -5,6 +5,9 @@
   padding: var(--card-padding);
   height: 40%;
 
+  background-position: center;
+  background-size: cover;
+
   .infos-above {
     display: flex;
     align-items: end;
@@ -43,14 +46,3 @@
     color: #acacac;
   }
 }
-
-.description-content {
-  text-align: justify;
-
-  :first-child {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-}
-
-

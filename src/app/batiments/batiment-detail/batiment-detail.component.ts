@@ -14,6 +14,7 @@ import {ActionsBoxComponent} from "../../../components/actions-box/actions-box.c
 import {
   LittleBadgeComponentComponent
 } from "../../../components/badges/little-badge-component/little-badge-component.component";
+import {TextSectionsComponent} from "../../../components/text-sections/text-sections.component";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -27,7 +28,8 @@ import {
     AsyncPipe,
     BadgeComponentComponent,
     ActionsBoxComponent,
-    LittleBadgeComponentComponent
+    LittleBadgeComponentComponent,
+    TextSectionsComponent
   ]
 })
 export class BatimentDetailComponent {
@@ -58,7 +60,7 @@ export class BatimentDetailComponent {
       case "SURVEILLANCE":
         return {icon: 'warning-outline', color: COMPLIANCE_STATUS_CONFIG.SURVEILLANCE};
       default:
-          return {icon: 'help-circle-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
+        return {icon: 'help-circle-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
     }
   }
 }
