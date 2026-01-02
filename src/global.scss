@@ -44,6 +44,10 @@ ion-content {
   --background: #fdfdfd;
 }
 
+ion-content::part(scroll) {
+  padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+}
+
 .bold {
   font-weight: bold;
 }
