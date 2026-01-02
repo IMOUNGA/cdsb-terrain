@@ -5,7 +5,7 @@ import {ComplianceStatus, Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
 import {AsyncPipe, NgStyle} from "@angular/common";
 import {Observable, of} from "rxjs";
-import {ENERGY_RATING_CONFIG} from "../../../lib/utils/property-energy-rating";
+import {ENERGY_RATING_CONFIG, PROPERTY_USAGES_CONFIG} from "../../../lib/utils/property-configs";
 import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
 import {BadgeComponentComponent} from "../../../components/badges/badge-component/badge-component.component";
 import {AppIconKey} from "../../../lib/utils/registry-icons";
@@ -37,6 +37,8 @@ export class BatimentDetailComponent {
   private propertyService = inject(PropertyService);
   readonly ENERGY = ENERGY_RATING_CONFIG;
   readonly OCCUPANCY = OCCUPANCY_STATUS_CONFIG;
+  readonly PROPERTY_USAGES = PROPERTY_USAGES_CONFIG;
+  readonly COMPLIANCE_STATUS = COMPLIANCE_STATUS_CONFIG;
 
   property$: Observable<Property | null> = this.initProperty();
 
@@ -53,14 +55,14 @@ export class BatimentDetailComponent {
 
   complianceIconCheck(status: ComplianceStatus): { icon: AppIconKey, color: string } {
     switch (status) {
-      case "OK":
-        return {icon: 'thumbs-up-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
-      case "NON CONFORME":
-        return {icon: 'thumbs-down-outline', color: COMPLIANCE_STATUS_CONFIG["NON CONFORME"]};
-      case "SURVEILLANCE":
-        return {icon: 'warning-outline', color: COMPLIANCE_STATUS_CONFIG.SURVEILLANCE};
+      case "compliant":
+        return {icon: 'thumbs-up-outline', color: COMPLIANCE_STATUS_CONFIG.compliant.color};
+      case "underReview":
+        return {icon: 'timeOutline', color: COMPLIANCE_STATUS_CONFIG.underReview.color};
+      case "nonCompliant":
+        return {icon: 'warning-outline', color: COMPLIANCE_STATUS_CONFIG.nonCompliant.color};
       default:
-        return {icon: 'help-circle-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
+        return {icon: 'help-circle-outline', color: COMPLIANCE_STATUS_CONFIG.compliant.color};
     }
   }
 }

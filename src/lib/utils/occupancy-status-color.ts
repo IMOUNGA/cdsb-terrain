@@ -5,6 +5,6 @@ export const OCCUPANCY_STATUS_CONFIG : Record<Occupancy, {
   color: string;
   textColor: string;
 }> = {
-  'OCCUPÉ' : {label: 'Occupé', color: '#ff0000', textColor: '#fff'},
-  'VACANT' : {label: 'Vacant', color: '#2ebc47', textColor: '#fff'}
+  'occupied' : {label: 'Occupé', color: '#ff0000', textColor: '#fff'},
+  'vacant' : {label: 'Vacant', color: '#2ebc47', textColor: '#fff'}
 }

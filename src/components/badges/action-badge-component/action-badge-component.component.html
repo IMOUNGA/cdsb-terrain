@@ -2,11 +2,11 @@
 
 <div class="action-item" [style.background-color]="ACTIONS_CONFIG[a.status].backgroundColor">
   <div class="action-item-type">
-    <p>{{ a.type }}</p>
+    <p>{{ ACTIONS_TYPES[a.type] }}</p>
     <ion-icon [icon]="ICON[ACTIONS_CONFIG[a.status].icon]" />
   </div>
   <div class="action-item-status">
     <p>{{ a.date }}</p>
-    <p>{{ a.status }}</p>
+    <p>{{ ACTIONS_CONFIG[a.status].label }}</p>
   </div>
 </div>

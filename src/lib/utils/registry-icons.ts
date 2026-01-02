@@ -3,13 +3,12 @@ import {
   checkmarkCircleOutline,
   helpCircleOutline, hourglassOutline,
   speedometerOutline,
-  thumbsDownOutline,
-  thumbsUpOutline,
+  thumbsUpOutline, timeOutline,
   warningOutline
 } from "ionicons/icons";
 
 export type AppIconKey =
-  | 'thumbs-down-outline'
+  | 'timeOutline'
   | 'thumbs-up-outline'
   | 'warning-outline'
   | 'help-circle-outline'
@@ -19,7 +18,7 @@ export type AppIconKey =
   | 'calendarOutline'
 
 export const REGISTRY_ICONS: Record<AppIconKey, string> = {
-  'thumbs-down-outline': thumbsDownOutline,
+  'timeOutline': timeOutline,
   'thumbs-up-outline': thumbsUpOutline,
   'warning-outline': warningOutline,
   'help-circle-outline': helpCircleOutline,

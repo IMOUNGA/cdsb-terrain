@@ -1,4 +1,11 @@
-import { EnergyRating } from "../interfaces";
+import {EnergyRating, TypeOfProperty} from "../interfaces";
+
+export const PROPERTY_USAGES_CONFIG: Record<TypeOfProperty, {label: string}> = {
+  warehouse: {label: 'Entrepôt'},
+  office: {label: 'Bureau'},
+  residential: {label: 'Logement'},
+  mixedUse: {label: 'Mixte'},
+}
 
 export const ENERGY_RATING_CONFIG: Record<
   EnergyRating,

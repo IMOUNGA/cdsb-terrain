@@ -24,7 +24,7 @@
         <h1>{{ property.name }}</h1>
         <h2>{{ property.city }}</h2>
         <p>{{ property.address }}</p>
-        <p class="bold">{{ property.usage }} - {{ property.surface }}</p>
+        <p class="bold">{{ PROPERTY_USAGES[property.usage].label }} - {{ property.surface }}</p>
       </div>
 
       @if (property.description) {
@@ -32,7 +32,7 @@
       }
 
       @if (property.complianceStatus) {
-        <app-badge-component title="Niveau de conformité" [text]="property.complianceStatus" [icon]="complianceIconCheck(property.complianceStatus)"  />
+        <app-badge-component title="Niveau de conformité" [text]="COMPLIANCE_STATUS[property.complianceStatus].label" [icon]="complianceIconCheck(property.complianceStatus)"  />
       }
 
       @if (property.actions) {

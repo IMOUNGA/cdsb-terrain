@@ -19,9 +19,9 @@ export interface BuildingAction {
   status: BuildingActionStatus;
 }
 
-type TypeOfProperty = 'Entrepôt' | 'Bureau' | 'Logement' | 'Mixte';
+export type TypeOfProperty = 'warehouse' | 'office' | 'residential' | 'mixedUse';
 export type EnergyRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | '?';
-export type ComplianceStatus = 'OK' | 'SURVEILLANCE' | 'NON CONFORME';
-export type Occupancy = 'OCCUPÉ' | 'VACANT';
-type BuildingActionType = 'Audit' | 'Travaux' | 'Contrôle' | 'En cours d\'attribution';
-export type BuildingActionStatus = 'TERMINÉ' | 'EN COURS' | 'PLANIFIÉ';
+export type ComplianceStatus = 'compliant' | 'underReview' | 'nonCompliant';
+export type Occupancy = 'occupied' | 'vacant';
+export type BuildingActionType = 'audit' | 'works' | 'inspection' | 'assignmentPending';
+export type BuildingActionStatus = 'done' | 'inProgress' | 'planned';

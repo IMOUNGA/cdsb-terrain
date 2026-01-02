@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 import {IonIcon} from "@ionic/angular/standalone";
 import {AppIconKey, REGISTRY_ICONS} from "../../../lib/utils/registry-icons";
+import {PROPERTY_USAGES_CONFIG} from "../../../lib/utils/property-configs";
 
 type CssColor = string;
 
@@ -22,5 +23,7 @@ export class BadgeComponentComponent  {
   readonly icon = input<{ icon: AppIconKey, color?: string }>();
 
   readonly ICONS = REGISTRY_ICONS;
+  readonly PROPERTY_USAGES = PROPERTY_USAGES_CONFIG;
+
 
 }

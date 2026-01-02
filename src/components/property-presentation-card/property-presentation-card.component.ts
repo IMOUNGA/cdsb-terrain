@@ -3,6 +3,7 @@ import {Property} from "../../lib/interfaces";
 import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from "@ionic/angular/standalone";
 import {TruncatePipe} from "../../pipes/truncates/truncate-pipe";
 import {ActivatedRoute, Router} from "@angular/router";
+import {PROPERTY_USAGES_CONFIG} from "../../lib/utils/property-configs";
 
 @Component({
   selector: 'app-property-presentation-card',
@@ -20,6 +21,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class PropertyPresentationCardComponent {
   readonly property = input.required<Property>();
+  readonly PROPERTY_USAGES = PROPERTY_USAGES_CONFIG;
 
   private router = inject(Router);
   private route = inject(ActivatedRoute);
