@@ -13,7 +13,7 @@ ion-tab-bar {
   border-radius: 3rem;
   border: none;
 
-  animation: fadeInTop .5s forwards;
+  animation: fadeInTop .5s 1s forwards;
 }
 
 @keyframes fadeInTop {
