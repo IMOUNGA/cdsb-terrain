@@ -1,4 +1,5 @@
 import {
+  arrowBackOutline,
   calendarOutline,
   checkmarkCircleOutline,
   helpCircleOutline, hourglassOutline,
@@ -16,6 +17,7 @@ export type AppIconKey =
   | 'checkmark-circle-outline'
   | 'hourglass-outline'
   | 'calendarOutline'
+  | 'arrow-back-outline'
 
 export const REGISTRY_ICONS: Record<AppIconKey, string> = {
   'timeOutline': timeOutline,
@@ -26,4 +28,5 @@ export const REGISTRY_ICONS: Record<AppIconKey, string> = {
   'checkmark-circle-outline': checkmarkCircleOutline,
   'hourglass-outline': hourglassOutline,
   'calendarOutline': calendarOutline,
+  'arrow-back-outline': arrowBackOutline,
 }

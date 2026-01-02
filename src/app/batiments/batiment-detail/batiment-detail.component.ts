@@ -3,7 +3,7 @@ import {IonContent} from "@ionic/angular/standalone";
 import {ActivatedRoute} from "@angular/router";
 import {ComplianceStatus, Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
-import {AsyncPipe, NgStyle} from "@angular/common";
+import {AsyncPipe} from "@angular/common";
 import {Observable, of} from "rxjs";
 import {ENERGY_RATING_CONFIG, PROPERTY_USAGES_CONFIG} from "../../../lib/utils/property-configs";
 import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
@@ -15,6 +15,7 @@ import {
   LittleBadgeComponentComponent
 } from "../../../components/badges/little-badge-component/little-badge-component.component";
 import {TextSectionsComponent} from "../../../components/text-sections/text-sections.component";
+import {BackButtonComponent} from "../../../components/back-button/back-button.component";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -24,12 +25,12 @@ import {TextSectionsComponent} from "../../../components/text-sections/text-sect
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     IonContent,
-    NgStyle,
     AsyncPipe,
     BadgeComponentComponent,
     ActionsBoxComponent,
     LittleBadgeComponentComponent,
-    TextSectionsComponent
+    TextSectionsComponent,
+    BackButtonComponent
   ]
 })
 export class BatimentDetailComponent {
