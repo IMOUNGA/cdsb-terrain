@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
-import {ExploreContainerComponent} from "../../components/explore-container/explore-container.component";
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {IonContent} from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-alertes-page',
   templateUrl: './alertes.page.html',
   styleUrls: ['./alertes.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, ExploreContainerComponent]
+  imports: [IonContent, CommonModule, FormsModule]
 })
-export class AlertesPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class AlertesPage {
 
 }

@@ -1,15 +1,11 @@
-import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../../components/explore-container/explore-container.component';
+import {Component} from '@angular/core';
+import {IonContent} from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-carte-page',
   templateUrl: 'carte.page.html',
   styleUrls: ['carte.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent]
+  imports: [IonContent]
 })
 export class CartePage {
-
-  constructor() {}
-
 }
