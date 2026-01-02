@@ -10,6 +10,7 @@ import {speedometerOutline} from "ionicons/icons";
 import {OCCUPANCY_STATUS_CONFIG} from "../../../lib/utils/occupancy-status-color";
 import {BadgeComponentComponent} from "../../../components/badges/badge-component/badge-component.component";
 import {AppIconKey} from "../../../lib/utils/registry-icons";
+import {COMPLIANCE_STATUS_CONFIG} from "../../../lib/utils/compliance-status";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -44,16 +45,16 @@ export class BatimentDetailComponent {
     return this.propertyService.getPropertyById(+id)
   }
 
-  complianceIconCheck(status: ComplianceStatus): AppIconKey {
+  complianceIconCheck(status: ComplianceStatus): { icon: AppIconKey, color: string } {
     switch (status) {
       case "OK":
-        return 'thumbs-up-outline';
+        return {icon: 'thumbs-up-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
       case "NON CONFORME":
-        return 'thumbs-down-outline';
+        return {icon: 'thumbs-down-outline', color: COMPLIANCE_STATUS_CONFIG["NON CONFORME"]};
       case "SURVEILLANCE":
-        return 'warning-outline';
+        return {icon: 'warning-outline', color: COMPLIANCE_STATUS_CONFIG.SURVEILLANCE};
       default:
-          return 'help-circle-outline';
+          return {icon: 'help-circle-outline', color: COMPLIANCE_STATUS_CONFIG.OK};
     }
   }
 

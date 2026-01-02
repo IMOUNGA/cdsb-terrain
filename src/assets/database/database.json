@@ -57,7 +57,7 @@
       "description": "Mise à disposition d’un bien immobilier d’environ 110 m² de bâtiment situé 6 rue du Ranelagh sur la commune de PARIS (75016).",
       "usage": "Entrepôt",
       "energyRating": "B",
-      "complianceStatus": "SURVEILLANCE",
+      "complianceStatus": "NON CONFORME",
       "occupancy": "VACANT",
       "actions": [
         {
@@ -129,7 +129,7 @@
       "description": "Commercialisation d’un bureau d’environ 50 m² situé 7 place du Général de Gaulle à Vaires-sur-Marne, en vue d’y exercer une activité d’auto-école.",
       "usage": "Bureau",
       "energyRating": "D",
-      "complianceStatus": "OK",
+      "complianceStatus": "NON CONFORME",
       "occupancy": "VACANT",
       "actions": [
         {

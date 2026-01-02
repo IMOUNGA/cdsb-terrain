@@ -19,7 +19,7 @@ export class BadgeComponentComponent  {
   readonly text = input.required<string>();
   readonly backgroundColor = input<CssColor>();
   readonly color = input<CssColor>();
-  readonly icon = input<AppIconKey>();
+  readonly icon = input<{ icon: AppIconKey, color?: string }>();
 
   readonly ICONS = REGISTRY_ICONS;
 

@@ -1,8 +1,12 @@
 <div class="badge-content"
      [style.background-color]="backgroundColor() ?? '#f4f4f4'"
      [style.color]="color() ?? '#000'">
+
   @if (icon(); as i) {
-    <ion-icon [icon]="ICONS[i]" />
+    <div class="icon-item" [style.background-color]="i.color ?? null">
+      <ion-icon
+        [icon]="ICONS[i.icon]" />
+    </div>
   }
   <div class="badge-content-text">
     <p>{{ title() }}</p>
