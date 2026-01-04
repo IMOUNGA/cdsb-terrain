@@ -1,5 +1,5 @@
 @let property = property$ | async;
-@let img = "https://ionicframework.com/docs/img/demos/card-media.png";
+@let img = 'assets/card-media.png';
 
 <ion-content [fullscreen]="true">
   <app-back-button />
@@ -7,7 +7,7 @@
   @if (property) {
     <div
       class="img-container"
-      [style.background-image]="`url(${img})`">
+      [style.background-image]="'url(' + img +')'">
       <div class="infos-above">
         <app-little-badge-component
           [backgroundColor]="OCCUPANCY[property.occupancy].color"

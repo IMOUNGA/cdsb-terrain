@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, inject, input} from '@angular/core';
 import {Property} from "../../lib/interfaces";
-import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from "@ionic/angular/standalone";
+import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonImg} from "@ionic/angular/standalone";
 import {TruncatePipe} from "../../pipes/truncates/truncate-pipe";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PROPERTY_USAGES_CONFIG} from "../../lib/utils/property-configs";
@@ -16,7 +16,8 @@ import {PROPERTY_USAGES_CONFIG} from "../../lib/utils/property-configs";
     IonCardHeader,
     IonCardSubtitle,
     IonCardContent,
-    TruncatePipe
+    TruncatePipe,
+    IonImg
   ]
 })
 export class PropertyPresentationCardComponent {
