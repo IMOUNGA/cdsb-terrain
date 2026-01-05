@@ -41,29 +41,16 @@ body {
 }
 
 ion-content {
-  --padding-top: env(safe-area-inset-top);
+  /*--padding-top: env(safe-area-inset-top);
   --padding-bottom: env(safe-area-inset-bottom);
   --padding-start: env(safe-area-inset-left);
-  --padding-end: env(safe-area-inset-right);
+  --padding-end: env(safe-area-inset-right);*/
 
   --background: #fdfdfd;
 }
 
 ion-content::part(scroll) {
   padding-bottom: calc(4rem + env(safe-area-inset-bottom));
-}
-
-// Ensure content doesn't scroll behind status bar when fullscreen
-ion-content[fullscreen] {
-  --offset-top: 0 !important;
-}
-
-// Add safe area to the app container
-ion-app {
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
 }
 
 .bold {

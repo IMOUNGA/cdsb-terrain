@@ -1,9 +1,15 @@
 @let property = property$ | async;
 @let img = 'assets/card-media.png';
 
-<ion-content [fullscreen]="true">
-  <app-back-button />
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/" text="Retour" />
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content [fullscreen]="true">
   @if (property) {
     <div
       class="img-container"

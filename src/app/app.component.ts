@@ -18,7 +18,7 @@ export class AppComponent {
     if (this.platform.is('capacitor')) {
       // Configure status bar for iOS
       await StatusBar.setStyle({ style: Style.Light });
-      await StatusBar.setOverlaysWebView({ overlay: true });
+      await StatusBar.setOverlaysWebView({ overlay: false });
     }
   }
 }

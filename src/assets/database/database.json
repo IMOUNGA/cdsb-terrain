@@ -8,9 +8,9 @@
       "surface": "440m2",
       "description": "La présente procédure de mise en concurrence a pour objet la passation d’une convention d’occupation temporaire non constitutive de droits réels relative à la mise à disposition d’un bien immobilier d’une superficie d’environ 200 m² de bâtiment et d’un terrain nu de 240m², situé rue de la Division Leclerc à VERSAILLES (78000).",
       "usage": "warehouse",
-      "energyRating": "G",
+      "energyRating": "A",
       "complianceStatus": "underReview",
-      "occupancy": "occupied",
+      "occupancy": "vacant",
       "actions": [
         {
           "date": "2025-11-20",
@@ -32,9 +32,9 @@
       "surface": "50m2",
       "description": "Mise à disposition de bureaux à VAIRES-SUR-MARNE (77), surface indiquée 50 m².",
       "usage": "office",
-      "energyRating": "A",
+      "energyRating": "G",
       "complianceStatus": "compliant",
-      "occupancy": "vacant",
+      "occupancy": "occupied",
       "actions": [
         {
           "date": "2025-10-10",

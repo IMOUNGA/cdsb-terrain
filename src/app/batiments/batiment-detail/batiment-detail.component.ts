@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {IonContent} from "@ionic/angular/standalone";
+import {IonBackButton, IonButton, IonButtons, IonContent, IonHeader, IonToolbar} from "@ionic/angular/standalone";
 import {ActivatedRoute} from "@angular/router";
 import {ComplianceStatus, Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
@@ -16,6 +16,7 @@ import {
 } from "../../../components/badges/little-badge-component/little-badge-component.component";
 import {TextSectionsComponent} from "../../../components/text-sections/text-sections.component";
 import {BackButtonComponent} from "../../../components/back-button/back-button.component";
+import {StatusBar, StatusBarStyle} from "@capacitor/status-bar";
 
 @Component({
   selector: 'app-batiment-detail',
@@ -30,7 +31,10 @@ import {BackButtonComponent} from "../../../components/back-button/back-button.c
     ActionsBoxComponent,
     LittleBadgeComponentComponent,
     TextSectionsComponent,
-    BackButtonComponent
+    IonHeader,
+    IonToolbar,
+    IonButtons,
+    IonBackButton
   ]
 })
 export class BatimentDetailComponent {
@@ -45,6 +49,10 @@ export class BatimentDetailComponent {
 
   constructor() {
     this.initProperty();
+  }
+
+  ionViewWillEnter() {
+    StatusBar.setStyle({ style: StatusBarStyle.Light });
   }
 
   initProperty() {

@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {IonContent} from '@ionic/angular/standalone';
+import {IonContent, IonHeader, IonTitle, IonToolbar} from '@ionic/angular/standalone';
 import {toSignal} from "@angular/core/rxjs-interop";
 import {PropertyService} from "../services/property/property.service";
 import {
@@ -11,7 +11,7 @@ import {
   templateUrl: 'batiments.page.html',
   styleUrls: ['batiments.page.scss'],
   standalone: true,
-  imports: [IonContent, PropertyPresentationCardComponent],
+  imports: [IonContent, PropertyPresentationCardComponent, IonHeader, IonToolbar, IonTitle],
 })
 export class BatimentsPage {
   private propertiesService = inject(PropertyService);
