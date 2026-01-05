@@ -1,10 +1,9 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {find, map, Observable, tap} from "rxjs";
+import {catchError, map, Observable, of} from "rxjs";
 import {Property} from "../../../lib/interfaces";
 
 type PropertiesResponse = { properties: Property[] };
-type PropertyResponse = { property: Property };
 
 @Injectable({
   providedIn: 'root',
@@ -14,8 +13,11 @@ export class PropertyService {
 
   getProperties(): Observable<Property[]> {
     return this.httpClient.get<PropertiesResponse>('/assets/database/database.json').pipe(
-      tap(properties => console.log(properties)),
-      map(properties => properties.properties)
+      map(properties => properties.properties),
+      catchError(err => {
+        console.error('Error fetching properties', err);
+        return of([]);
+      })
     );
   }
 
@@ -23,7 +25,10 @@ export class PropertyService {
     return this.httpClient.get<PropertiesResponse>('/assets/database/database.json')
       .pipe(
         map(data => data.properties.find(property => property.id === id) ?? null),
-        tap(property => console.log(property))
+        catchError(err => {
+          console.error('Error fetching property', err);
+          return of(null);
+        })
       );
   }
 }
