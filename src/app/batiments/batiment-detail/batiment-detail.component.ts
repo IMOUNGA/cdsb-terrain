@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {IonBackButton, IonButton, IonButtons, IonContent, IonHeader, IonToolbar} from "@ionic/angular/standalone";
+import {IonBackButton, IonButtons, IonContent, IonHeader, IonToolbar} from "@ionic/angular/standalone";
 import {ActivatedRoute} from "@angular/router";
 import {ComplianceStatus, Property} from "../../../lib/interfaces";
 import {PropertyService} from "../../services/property/property.service";
@@ -15,7 +15,6 @@ import {
   LittleBadgeComponentComponent
 } from "../../../components/badges/little-badge-component/little-badge-component.component";
 import {TextSectionsComponent} from "../../../components/text-sections/text-sections.component";
-import {BackButtonComponent} from "../../../components/back-button/back-button.component";
 import {StatusBar, StatusBarStyle} from "@capacitor/status-bar";
 
 @Component({
