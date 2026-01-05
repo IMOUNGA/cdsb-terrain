@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { IonApp, IonRouterOutlet, Platform } from '@ionic/angular/standalone';
 import { StatusBar, Style } from '@capacitor/status-bar';
 
@@ -8,7 +8,9 @@ import { StatusBar, Style } from '@capacitor/status-bar';
   imports: [IonApp, IonRouterOutlet],
 })
 export class AppComponent {
-  constructor(private platform: Platform) {
+  private platform = inject(Platform);
+
+  constructor() {
     this.initializeApp();
   }
 
@@ -17,6 +19,7 @@ export class AppComponent {
 
     if (this.platform.is('capacitor')) {
       // Configure status bar for iOS
+      await StatusBar.show(); // Afficher la status bar
       await StatusBar.setStyle({ style: Style.Light });
       await StatusBar.setOverlaysWebView({ overlay: false });
     }
